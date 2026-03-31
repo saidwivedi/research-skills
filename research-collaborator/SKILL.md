@@ -1,6 +1,6 @@
 ---
 name: research-collaborator
-disable-model-invocation: true
+disable-model-invocation: false
 description: >
   Use this skill whenever a researcher wants to test, validate, stress-test, or falsify a research
   idea or hypothesis — especially in AI/ML/deep learning. Trigger on phrases like "I have an idea,"
@@ -165,7 +165,18 @@ std/CI reported, check if improvement exceeds cross-seed variance.
 
 ---
 
+## Learning From Mistakes
+
+When the researcher corrects a research judgment error (wrong metric, bad experiment design,
+flawed reasoning — not typos or implementation bugs), generalize the lesson and append it to
+`agent-mistakes.md`. Strip project-specific details, check for duplicates first, and tell the
+researcher what you added.
+
+---
+
 ## Reference Files
 
 - `silent-bugs.md` — 191 silent bugs organized by tier (universal → architecture-specific)
+- `agent-mistakes.md` — Common LLM agent failure modes in research. **Read this before acting.**
+  Community-maintained list of patterns where agents consistently get research decisions wrong.
 - `sources.md` — Bibliography of research methodology sources
