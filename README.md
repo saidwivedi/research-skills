@@ -28,6 +28,15 @@ Claude Code skills for AI/ML researchers.
   </tr>
 </table>
 
+Also includes a utility skill:
+
+<table>
+  <tr>
+    <td width="280"><a href="token-usage/"><b>token-usage</b></a></td>
+    <td>Per-session token usage breakdown. <code>/token-usage</code> or <code>/token-usage 30</code> for last N days.</td>
+  </tr>
+</table>
+
 ## Installation
 
 Copy the skill directories into your Claude Code skills folder:
@@ -37,12 +46,13 @@ Copy the skill directories into your Claude Code skills folder:
 cp -r research-collaborator ~/.claude/skills/
 
 # Or copy all skills
-cp -r research-collaborator results-to-slides ~/.claude/skills/
+cp -r research-collaborator results-to-slides token-usage ~/.claude/skills/
 ```
 
 Skills are invoked via slash commands in Claude Code:
 - `/research-collaborator` - start a research collaboration session
 - `/results-to-slides 0301 0308` - generate a presentation for experiments from March 1-8
+- `/token-usage 30` - show token usage over the last 30 days
 
 ## Requirements
 
