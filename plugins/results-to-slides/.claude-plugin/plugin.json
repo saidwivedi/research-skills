@@ -1,0 +1,5 @@
+{
+  "name": "results-to-slides",
+  "description": "Discovers experiments from git/output folders, collects images and metrics, generates PowerPoint presentations.",
+  "author": { "name": "saidwivedi" }
+}

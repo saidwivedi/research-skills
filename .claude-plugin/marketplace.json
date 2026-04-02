@@ -1,0 +1,33 @@
+{
+  "name": "saidwivedi-research",
+  "owner": {
+    "name": "saidwivedi"
+  },
+  "metadata": {
+    "description": "Claude Code skills for AI/ML researchers.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "research-collaborator",
+      "description": "Guardrails your research workflow — checks hypotheses, catches known bugs, flags sloppy methodology.",
+      "version": "1.0.0",
+      "author": { "name": "saidwivedi" },
+      "source": "./plugins/research-collaborator"
+    },
+    {
+      "name": "results-to-slides",
+      "description": "Discovers experiments from git/output folders, collects images and metrics, generates PowerPoint presentations.",
+      "version": "1.0.0",
+      "author": { "name": "saidwivedi" },
+      "source": "./plugins/results-to-slides"
+    },
+    {
+      "name": "token-usage",
+      "description": "Per-session token usage breakdown.",
+      "version": "1.0.0",
+      "author": { "name": "saidwivedi" },
+      "source": "./plugins/token-usage"
+    }
+  ]
+}

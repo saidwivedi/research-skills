@@ -1,0 +1,5 @@
+{
+  "name": "token-usage",
+  "description": "Per-session token usage breakdown.",
+  "author": { "name": "saidwivedi" }
+}

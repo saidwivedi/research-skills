@@ -19,11 +19,11 @@ Claude Code skills for AI/ML researchers.
 
 <table>
   <tr>
-    <td width="280"><a href="research-collaborator/"><b>research-collaborator</b></a></td>
+    <td width="280"><a href="plugins/research-collaborator/"><b>research-collaborator</b></a></td>
     <td>Guardrails your research workflow. Encodes principles from experienced researchers and applies them before you spend the GPU hours. Checks your hypothesis, catches known bugs and flags sloppy methodology.</td>
   </tr>
   <tr>
-    <td width="280"><a href="results-to-slides/"><b>results-to-slides</b></a></td>
+    <td width="280"><a href="plugins/results-to-slides/"><b>results-to-slides</b></a></td>
     <td>Discovers experiments from git history and output folders, collects images and metrics, generates editable PowerPoint presentations (.pptx).</td>
   </tr>
 </table>
@@ -32,22 +32,28 @@ Also includes a utility skill:
 
 <table>
   <tr>
-    <td width="280"><a href="token-usage/"><b>token-usage</b></a></td>
+    <td width="280"><a href="plugins/token-usage/"><b>token-usage</b></a></td>
     <td>Per-session token usage breakdown. <code>/token-usage</code> or <code>/token-usage 30</code> for last N days.</td>
   </tr>
 </table>
 
 ## Installation
 
-Copy the skill directories into your Claude Code skills folder:
+Add the marketplace in Claude Code:
 
 ```bash
-# Copy a single skill
-cp -r research-collaborator ~/.claude/skills/
-
-# Or copy all skills
-cp -r research-collaborator results-to-slides token-usage ~/.claude/skills/
+/plugin marketplace add saidwivedi/research-skills
 ```
+
+Install all plugins:
+
+```bash
+/plugin install research-collaborator@saidwivedi-research
+/plugin install results-to-slides@saidwivedi-research
+/plugin install token-usage@saidwivedi-research
+```
+
+Or install just the ones you need.
 
 Skills are invoked via slash commands in Claude Code:
 - `/research-collaborator` - start a research collaboration session
